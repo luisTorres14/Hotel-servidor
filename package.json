@@ -1,0 +1,23 @@
+{
+  "name": "hotelservidor",
+  "version": "1.0.0",
+  "description": "Steps to run this project:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luis Torres",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisTorres14/Hotel-servidor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/luisTorres14/Hotel-servidor/issues"
+  },
+  "homepage": "https://github.com/luisTorres14/Hotel-servidor#readme"
+}
