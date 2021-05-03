@@ -9,7 +9,10 @@
   "author": "Luis Torres",
   "license": "ISC",
   "dependencies": {
-    "cors": "^2.8.5"
+    "bcryptjs": "^2.4.3",
+    "class-validator": "^0.13.1",
+    "cors": "^2.8.5",
+    "jsonwebtoken": "^8.5.1"
   },
   "devDependencies": {},
   "repository": {
