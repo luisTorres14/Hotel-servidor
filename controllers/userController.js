@@ -31,7 +31,7 @@ exports.actualizarUser = async(req, res) => {
 
     try {
 
-        const { id, cedula, name, lastName, email, password } = req.body;
+        const { id, cedula, name, lastName, email, adult, children, checkIn, checkOut, detail } = req.body;
         let user = await User.findById(req.params.id);
 
         if (!user) {
@@ -42,7 +42,11 @@ exports.actualizarUser = async(req, res) => {
         user.name = name;
         user.lastName = lastName;
         user.email = email;
-        user.password = password;
+        user.adult = adult;
+        user.children = children;
+        user.checkIn = checkIn;
+        user.checkOut = checkOut;
+        user.detail = detail;
 
         user = await User.findOneAndUpdate({ _id: req.params.id }, user, { new: true });
         res.json(user);

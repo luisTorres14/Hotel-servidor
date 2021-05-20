@@ -21,10 +21,30 @@ const UserSchema = mongoose.Schema({
         type: String,
         require: true
     },
-    password: {
+    adult: {
+        type: Number,
+        require: true
+    },
+    children: {
+        type: Number,
+        require: true
+    },
+    checkIn: {
+        type: Date,
+        default: Date.now()
+    },
+    checkOut: {
+        type: Date,
+        default: Date.now()
+    },
+    detail: {
         type: String,
         require: true
     }
+    // password: {
+    //     type: String,
+    //     require: true
+    // }
 });
 
 module.exports = mongoose.model('User', UserSchema);
